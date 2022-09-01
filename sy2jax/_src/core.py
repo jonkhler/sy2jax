@@ -105,7 +105,7 @@ def call_on_tuple(fn: Callable[[tuple[PyTree, ...]], PyTree]) -> Translation:
     return fun
 
 
-def call(fn: Callable[[PyTree, ...], PyTree]):
+def call(fn: Callable[[PyTree, ...], PyTree]) -> Translation:
     def fun(expr, **kwargs):
         return fn(*map_args(expr.args, **kwargs))
 
