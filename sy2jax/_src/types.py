@@ -13,7 +13,7 @@ __all__ = [
     "SympyExprType",
     "SymbolTable",
     "FunctionTable",
-    "Translation"
+    "Translation",
 ]
 
 
@@ -23,7 +23,7 @@ Numeric = jnp.ndarray | Number
 UnaryOp = Callable[[PyTree], PyTree]
 BinaryOp = Callable[[PyTree, PyTree], PyTree]
 
-SympyExprType = TypeVar('SympyExprType', Callable, sy.Expr)
+SympyExprType = TypeVar("SympyExprType", Callable, sy.Expr)
 
 SymbolTable = Mapping[str, Numeric]
 FunctionTable = Mapping[SympyExprType, "Translation"]

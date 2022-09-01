@@ -1,8 +1,4 @@
-__all__ = [
-    "core",
-    "api",
-    "types"
-]
+__all__ = ["core", "api", "types"]
 
 from . import ui
 from . import types
