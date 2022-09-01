@@ -4,7 +4,7 @@ import sympy as sy
 import sympy.matrices.expressions.matexpr as matexpr
 
 from .types import PyTree, SymbolTable, FunctionTable, Numeric
-from .core import type_cast, unary_op, binary_op, call_on_tuple, call, symbol, handler
+from .core import type_cast, unary_op, binary_op, call_on_tuple, call, symbol, handler, map_args
 
 
 _SIMPLE_UNARY_FUNCTIONS = [
